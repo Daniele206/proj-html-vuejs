@@ -6,13 +6,17 @@
 
 
 <template>
-  <div class="template_debug bg-danger">
+  <footer class="my-container d-flex align-items-center">
     Footer
-  </div>
+  </footer>
 </template>
 
 
 <style lang="scss" scoped>
   @use '../assets/scss/variables' as *;
+
+  footer{
+    border: 1px solid black;
+  }
 
 </style>

@@ -19,7 +19,7 @@
 
 
 <template>
-  <div>
+  <div class="d-flex flex-column align-items-center">
     <Header />
     <Main />
     <Footer />

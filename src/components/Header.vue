@@ -6,13 +6,19 @@
 
 
 <template>
-  <div class="template_debug bg-primary">
+  <header class="my-container d-flex align-items-center">
     Header
-  </div>
+  </header>
 </template>
 
 
 <style lang="scss" scoped>
   @use '../assets/scss/variables' as *;
+
+  header{
+    height: 140px;
+    position: fixed;
+    border: 1px solid black;
+  }
 
 </style>
