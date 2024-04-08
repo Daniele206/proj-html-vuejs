@@ -25,6 +25,7 @@
   @use '../assets/scss/variables' as *;
 
   #jumbotron-contet{
+    background-color: $my-black;
     padding-top: 140px;
     border: 1px solid black;
   }
