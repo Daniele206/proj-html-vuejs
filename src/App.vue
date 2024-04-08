@@ -3,13 +3,13 @@
   import axios from 'axios';
   //axios
 
-  import Header from './components/Header.vue';
+  import Jumbotron from './components/Jumbotron.vue';
   import Main from './components/Main.vue';
   import Footer from './components/Footer.vue';
 
   export default {
     components:{
-      Header,
+      Jumbotron,
       Main,
       Footer
     },
@@ -20,7 +20,7 @@
 
 <template>
   <div class="d-flex flex-column align-items-center">
-    <Header />
+    <Jumbotron class="w-100" />
     <Main />
     <Footer />
   </div>
@@ -28,7 +28,7 @@
 
 
 <style lang="scss">
-
   @use './assets/scss/main.scss';
+
 
 </style>
