@@ -38,6 +38,7 @@ const dataBase= {
     fsMainSpot: '4.2',
     text: 'Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla.',
     textBtn: 'EXPLORE THE MENU',
+    img: 'slider32x.jpg',
   },
   mainAbUs:{
 
@@ -49,7 +50,13 @@ const dataBase= {
 
   },
   mainTakeOut: {
-
+    title: 'ENJOY YOUR MEAL AT HOME',
+    mainSpot: 'TAKEOUT NOW AVAILABLE',
+    fsMainSpot: '4.2',
+    text: 'Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla non arcu moris tortor.',
+    icoBtn: 'fa-solid fa-car',
+    textBtn: 'VIEW TAKEOUT MENU',
+    img: 'slider72x-scaled.jpg',
   },
   mainMenu: {
 

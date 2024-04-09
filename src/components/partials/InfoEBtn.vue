@@ -5,7 +5,8 @@
       mainSpot: String,
       fsMs: String,
       text: String,
-      textBtn: String
+      textBtn: String,
+      icoBtn:String
     }
     
   }
@@ -22,7 +23,10 @@
       <div class="text pb-5 pt-2">
         {{ text }}
       </div>
-      <button class="my-btn mt-4 btn btn-outline-light rounded-0 text-uppercase">{{ textBtn }}</button>
+      <button class="my-btn mt-4 btn btn-outline-light rounded-0 text-uppercase">
+        <i v-if="icoBtn !== false" :class="icoBtn"></i>
+        {{ textBtn }}
+      </button>
     </div>
   </div>
 </template>

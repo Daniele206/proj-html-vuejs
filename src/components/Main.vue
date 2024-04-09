@@ -1,12 +1,13 @@
 <script>
   import { dataBase } from '../data/data';
-  import TheBTab from './partials/TheBTab.vue';
+  import MultiTab from './partials/MultiTab.vue';
+  import TheBTab from './partials/MultiTab.vue';
   import UnExp from './partials/UnExp.vue';
 
   export default {
     components:{
       UnExp,
-      TheBTab,
+      MultiTab,
     },
 
     data(){
@@ -27,7 +28,23 @@
     :text2="dataBase.mainUnExp.text2"
     :sushiCard="dataBase.mainUnExp.sushiCard"
     />
-    <TheBTab />
+    <MultiTab 
+      :title="dataBase.mainTheBTab.title"
+      :mainSpot="dataBase.mainTheBTab.mainSpot"
+      :fsMs="dataBase.mainTheBTab.fsMainSpot"
+      :text="dataBase.mainTheBTab.text"
+      :textBtn="dataBase.mainTheBTab.textBtn"
+      :img="dataBase.mainTheBTab.img"
+    />
+    <MultiTab 
+      :title="dataBase.mainTakeOut.title"
+      :mainSpot="dataBase.mainTakeOut.mainSpot"
+      :fsMs="dataBase.mainTakeOut.fsMainSpot"
+      :text="dataBase.mainTakeOut.text"
+      :textBtn="dataBase.mainTakeOut.textBtn"
+      :icoBtn="dataBase.mainTakeOut.icoBtn"
+      :img="dataBase.mainTakeOut.img"
+    />
   </main>
 </template>
 

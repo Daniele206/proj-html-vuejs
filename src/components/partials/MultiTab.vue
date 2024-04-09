@@ -1,32 +1,36 @@
 <script>
-  import { dataBase } from '../../data/data';
 
   import InfoEBtn from './InfoEBtn.vue';
 
   export default {
     components:{
-      InfoEBtn,
+      InfoEBtn
     },
 
-    data(){
-      return{
-        dataBase
-      }
-    }
+    props:{
+      title: String,
+      mainSpot: String,
+      fsMs: String,
+      text: String,
+      textBtn: String,
+      img: String,
+      icoBtn: String
+    },
   }
 </script>
 
 
 <template>
-  <div class="bg-black w-100 d-flex justify-content-center img-bg">
+  <div class="bg-black w-100 d-flex justify-content-center img-bg" :style="`background-image: url(/public/${img});`">
     <div class="my_container total-pd d-flex justify-content-end">
       <InfoEBtn 
       class="text-white"
-      :title="dataBase.mainTheBTab.title"
-      :mainSpot="dataBase.mainTheBTab.mainSpot"
-      :fsMs="dataBase.mainTheBTab.fsMainSpot"
-      :text="dataBase.mainTheBTab.text"
-      :textBtn="dataBase.mainTheBTab.textBtn"
+      :title="title"
+      :mainSpot="mainSpot"
+      :fsMs="fsMs"
+      :text="text"
+      :textBtn="textBtn"
+      :icoBtn="icoBtn"
       />
     </div>
   </div>
@@ -42,7 +46,6 @@
 }
 
 .img-bg{
-  background-image: url(/public/slider32x.jpg);
   background-size: 1150px;
   background-repeat: no-repeat;
 }
