@@ -1,5 +1,11 @@
 <script>
   export default {
+    props:{
+      preText1:String,
+      text1: String,
+      mainSpot: String,
+      text2: String,
+    }
     
   }
 </script>
@@ -8,13 +14,15 @@
 <template>
   <div class="un-exp my_container-m">
     <div class="d-flex flex-wrap">
-      <div class="w-50 un-info debug py-5">
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem asperiores, ea explicabo fugiat voluptatum suscipit ratione sunt iste, praesentium numquam labore consequuntur temporibus repellendus laudantium debitis, blanditiis voluptates reiciendis.</div>
-        <h3 class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi aspernatur consectetur ad neque eius consequuntur! Illo odit, eaque nam exercitationem quod natus quisquam ad illum tempora, aspernatur distinctio vero?</div>
-        <img class="w-signature pt-3" src="/public/signature.jpg" alt="">
+      <div class="w-50 un-info py-5">
+        <div class="un-info-card">
+          <div class="un-exp-text"><strong>{{ preText1 }}</strong>{{ text1 }}</div>
+          <h3 class="py-5 main-spot">{{ mainSpot }}</h3>
+          <div class="un-exp-text">{{ text2 }}</div>
+          <img class="w-signature pt-3" src="/public/signature.jpg" alt="">
+        </div>
       </div>
-      <div class="w-50 debug d-flex justify-content-end">
+      <div class="w-50 d-flex justify-content-end">
         <div class="my_card">
           <img class="card_img" src="/public/info22x.jpg" alt="">
           <div class="text-uppercase text_card-img">california rolls - $22</div>
@@ -38,6 +46,20 @@
     margin: 130px 0;
     .un-info{
       padding-right: 4rem;
+      .un-info-card{
+        width: 90%;
+        .main-spot{
+          font-family: "Bebas Neue", sans-serif;
+          font-size: 4.8rem;
+        }
+        .un-exp-text{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 1.2rem;
+          letter-spacing: 0.01rem;
+          line-height: 2rem;
+          color: $my-darck-gray;
+        }
+      }
     }
     .my_card{
       background-color: black;
