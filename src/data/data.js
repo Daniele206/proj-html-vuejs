@@ -62,7 +62,8 @@ const dataBase= {
 
   },
   footer: {
-
+    text: 'Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Quam eu proin sit massa condimentum.',
+    copy: 'Copyright 2012 - 2019 Avada | All Rights Reserved | Powered by WordPress | ThemeFusion'
   }
 }
 
