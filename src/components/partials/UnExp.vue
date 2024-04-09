@@ -7,6 +7,7 @@
     },
 
     props:{
+      sushiCard: Object,
       preText1:String,
       text1: String,
       mainSpot: String,
@@ -35,8 +36,14 @@
         </div>
       </div>
     </div>
-    <div class="sushi-pt">
-      <SushiCard />
+    <div class="sushi-pt d-flex">
+      <SushiCard v-for="sushi in sushiCard"
+      :key="sushi.id"
+      :sushiImg="sushi.id"
+      :sushiSpot="sushi.title"
+      :sushiText="sushi.text"
+      :sushiBtnText="sushi.btnText"
+      />
     </div>
   </div>
 </template>

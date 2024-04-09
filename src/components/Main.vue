@@ -23,6 +23,7 @@
     :text1="dataBase.mainUnExp.text1"
     :mainSpot="dataBase.mainUnExp.mainSpot"
     :text2="dataBase.mainUnExp.text2"
+    :sushiCard="dataBase.mainUnExp.sushiCard"
     />
   </main>
 </template>

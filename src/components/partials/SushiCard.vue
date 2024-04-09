@@ -1,16 +1,21 @@
 <script>
   export default {
-    
+    props:{
+      sushiImg: String,
+      sushiSpot: String,
+      sushiText: String,
+      sushiBtnText: String,
+    }
   }
 </script>
 
 
 <template>
   <div class="my_sushi_card px-5">
-    <img src="/public/sushi-1.png" alt="">
-    <h2 class="sushi-spot text-center">THE BEST TABLE IN TOWN</h2>
-    <div class="suchi-text text-center p-text-btn">Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.</div>
-    <button class="btn my_btn-outline-gray rounded-0 text-uppercase">EXPLORE THE MENU</button>
+    <img :src="`/public/sushi-${sushiImg}.png`" alt="">
+    <h2 class="sushi-spot text-center">{{ sushiSpot }}</h2>
+    <div class="suchi-text text-center p-text-btn">{{ sushiText }}</div>
+    <button class="btn my_btn-outline-gray rounded-0 text-uppercase">{{ sushiBtnText }}</button>
   </div>
 </template>
 
