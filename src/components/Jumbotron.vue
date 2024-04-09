@@ -1,12 +1,19 @@
 
 <script>
   import Header from './partials/Header.vue';
-  import InfoEBtn from './partials/InfoEBtn.vue'
+  import InfoEBtn from './partials/InfoEBtn.vue';
+  import { dataBase } from '../data/data';
 
   export default {
     components:{
       Header,
       InfoEBtn
+    },
+
+    data(){
+      return{
+        dataBase,
+      }
     }
     
   }
@@ -17,7 +24,12 @@
   <div id="jumbotron" class="d-flex flex-column align-items-center">
     <Header />
     <div id="jumbotron-contet" class="my-container">
-      <InfoEBtn />
+      <InfoEBtn 
+      :title="dataBase.jumbotron.title"
+      :mainSpot="dataBase.jumbotron.mainSpot"
+      :text="dataBase.jumbotron.text"
+      :textBtn="dataBase.jumbotron.textBtn"
+      />
     </div>
   </div>
 </template>

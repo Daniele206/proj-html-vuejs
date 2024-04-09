@@ -2,7 +2,7 @@
   export default {
     props:{
       title: String,
-      maniSpot: String,
+      mainSpot: String,
       text: String,
       textBtn: String
     }
@@ -15,16 +15,12 @@
   <div class="d-flex">
     <div class="befor-jum-info"></div>
     <div class="w-25">
-      <h3 class="pb-4 title text-uppercase">the best table in town</h3>
-      <h2 class="main-spot text-uppercase pb-4 pt-2">fine dining experience</h2>
+      <h3 class="pb-4 title text-uppercase">{{ title }}</h3>
+      <h2 class="main-spot text-uppercase pb-4 pt-2">{{ mainSpot }}</h2>
       <div class="text pb-5 pt-2">
-        Pelentesque vitae viverra risus, sagittis.
-        <br>
-        Venenatis ridiculus sclerique nisi in urna
-        <br>
-        nulla. Sit tempor a et nisl, ac felis.
+        {{ text }}
       </div>
-      <button class="my-btn mt-4 btn btn-outline-light rounded-0 text-uppercase">explore the menu</button>
+      <button class="my-btn mt-4 btn btn-outline-light rounded-0 text-uppercase">{{ textBtn }}</button>
     </div>
   </div>
 </template>
@@ -64,7 +60,7 @@
   }
 
   .my-btn{
-    margin-bottom: 12rem;
+    margin-bottom: 12.5rem;
     font-family: "Kanit", sans-serif;
     font-size: .9rem;
     font-weight: 600;
