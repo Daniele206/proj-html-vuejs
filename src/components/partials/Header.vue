@@ -7,7 +7,7 @@
 
 <template>
   <header>
-    <div class="my-container">
+    <div class="my_container">
       <div class="row">
         <div class="col col-5">
           <img src="/public/logo-restaurant.png" alt="">

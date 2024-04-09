@@ -23,10 +23,11 @@
 <template>
   <div id="jumbotron" class="d-flex flex-column align-items-center">
     <Header />
-    <div id="jumbotron-contet" class="my-container">
+    <div id="jumbotron-contet" class="my_container">
       <InfoEBtn 
       :title="dataBase.jumbotron.title"
       :mainSpot="dataBase.jumbotron.mainSpot"
+      :fsMs="dataBase.jumbotron.fsMainSpot"
       :text="dataBase.jumbotron.text"
       :textBtn="dataBase.jumbotron.textBtn"
       />

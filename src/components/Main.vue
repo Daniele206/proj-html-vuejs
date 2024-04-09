@@ -1,22 +1,22 @@
 <script>
+  import UnExp from './partials/UnExp.vue'
+
   export default {
-    
+    components:{
+      UnExp,
+    }
   }
 </script>
 
 
 <template>
-  <main class="my-container d-flex align-items-center">
-    Main
+  <main class="d-flex flex-column align-items-center">
+    <UnExp />
   </main>
 </template>
 
 
 <style lang="scss" scoped>
   @use '../assets/scss/variables' as *;
-  main{
-    height: 2000px;
-    border: 1px solid black;
-  }
 
 </style>

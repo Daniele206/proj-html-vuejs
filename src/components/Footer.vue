@@ -6,7 +6,7 @@
 
 
 <template>
-  <footer class="my-container d-flex align-items-center">
+  <footer class="d-flex align-items-center">
     Footer
   </footer>
 </template>

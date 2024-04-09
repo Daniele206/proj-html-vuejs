@@ -3,6 +3,7 @@
     props:{
       title: String,
       mainSpot: String,
+      fsMs: String,
       text: String,
       textBtn: String
     }
@@ -16,7 +17,8 @@
     <div class="befor-jum-info"></div>
     <div class="w-25">
       <h3 class="pb-4 title text-uppercase">{{ title }}</h3>
-      <h2 class="main-spot text-uppercase pb-4 pt-2">{{ mainSpot }}</h2>
+      <h2 class="main-spot text-uppercase pb-4 pt-2" :style="`
+    font-size: ${fsMs}rem;`">{{ mainSpot }}</h2>
       <div class="text pb-5 pt-2">
         {{ text }}
       </div>
@@ -47,7 +49,6 @@
   }
   
   .main-spot{
-    font-size: 5.8rem;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
