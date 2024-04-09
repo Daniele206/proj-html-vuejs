@@ -25,6 +25,16 @@
           </ul>
         </div>
       </div>
+      <div class="box-flag-container d-flex flex-column">
+        <div class="box-flag">
+          <div class="box-content">A</div>
+          <div class="box-text text-center">Demos</div>
+        </div>
+        <div class="box-flag mt-2">
+          <div class="box-content">A</div>
+          <div class="box-text text-center">Demos</div>
+        </div>
+      </div>
     </div>
   </header>
 </template>
@@ -51,6 +61,29 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(rgb(0, 0, 0) -25%, rgba(0, 0, 0, 0));
+    .box-flag-container{
+      position: absolute;
+      top: 145px;
+      right: 20px;
+      .box-flag{
+        background-color: $my-white;
+        width: 65px;
+        aspect-ratio: 1;
+        border-radius: 8px;
+        color: $my-darck-gray;
+        box-shadow: 0 0 4px $my-black;
+        .box-content{
+          height: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .box-text{
+          font-size: 0.8rem;
+          font-weight: bold;
+        }
+    }
+    }
     .col{
       display: flex;
       align-items: center;
