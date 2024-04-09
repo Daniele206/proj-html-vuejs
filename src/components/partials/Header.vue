@@ -44,8 +44,10 @@
 
   header{
     color: $my-white;
-    padding: 50px 0px 150px 0px;
+    padding-top: 40px;
+    height: 180px;
     width: 100%;
+    position: fixed;
     display: flex;
     justify-content: center;
     background: linear-gradient(rgb(0, 0, 0) -25%, rgba(0, 0, 0, 0));
