@@ -26,13 +26,10 @@
         </div>
       </div>
       <div class="box-flag-container d-flex flex-column">
-        <div class="box-flag">
+        <div v-for="i in 2" class="box-flag mt-2">
           <div class="box-content">A</div>
-          <div class="box-text text-center">Demos</div>
-        </div>
-        <div class="box-flag mt-2">
-          <div class="box-content">A</div>
-          <div class="box-text text-center">Demos</div>
+          <div v-if="i === 1" class="box-text text-center">Demos</div>
+          <div v-else-if="i === 2" class="box-text text-center">On Sale</div>
         </div>
       </div>
     </div>
@@ -63,7 +60,7 @@
     background: linear-gradient(rgb(0, 0, 0) -25%, rgba(0, 0, 0, 0));
     .box-flag-container{
       position: absolute;
-      top: 145px;
+      top: 140px;
       right: 20px;
       .box-flag{
         background-color: $my-white;
