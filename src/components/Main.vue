@@ -1,13 +1,14 @@
 <script>
   import { dataBase } from '../data/data';
   import MultiTab from './partials/MultiTab.vue';
-  import TheBTab from './partials/MultiTab.vue';
   import UnExp from './partials/UnExp.vue';
+  import MidSlider from './partials/MidSlider.vue';
 
   export default {
     components:{
       UnExp,
       MultiTab,
+      MidSlider,
     },
 
     data(){
@@ -36,6 +37,7 @@
       :textBtn="dataBase.mainTheBTab.textBtn"
       :img="dataBase.mainTheBTab.img"
     />
+    <MidSlider />
     <MultiTab 
       :title="dataBase.mainTakeOut.title"
       :mainSpot="dataBase.mainTakeOut.mainSpot"

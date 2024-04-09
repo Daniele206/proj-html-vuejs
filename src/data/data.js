@@ -43,9 +43,6 @@ const dataBase= {
   mainAbUs:{
 
   },
-  mainMidSlider: {
-
-  },
   mainNewProm: {
 
   },
