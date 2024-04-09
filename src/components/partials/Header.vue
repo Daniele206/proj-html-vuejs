@@ -27,7 +27,11 @@
       </div>
       <div class="box-flag-container d-flex flex-column">
         <div v-for="i in 2" class="box-flag mt-2">
-          <div class="box-content">A</div>
+          <div v-if="i === 1" class="box-content"><i class="fa-solid fa-paper-plane my-blue"></i></div>
+          <div v-else-if="i === 2" class="box-content box-content-price fs-3 fw-bold my_text_green">
+          <div class="fs-5 mb-1 pb-2">$</div>
+          <div>39</div>
+          </div>
           <div v-if="i === 1" class="box-text text-center">Demos</div>
           <div v-else-if="i === 2" class="box-text text-center">On Sale</div>
         </div>
@@ -39,6 +43,14 @@
 
 <style lang="scss" scoped>
   @use '../../assets/scss/variables' as *;
+
+  .my_text_green{
+    color: #63BA79;
+  }
+
+  .my-blue{
+    color: $my-matt-blue;
+  }
 
   .new-flag::after{
     font-size: .7rem;
@@ -74,6 +86,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          padding-top: 10px;
+        }
+        .box-content-price{
+          font-family: "Poppins", snas-serif;
         }
         .box-text{
           font-size: 0.8rem;
