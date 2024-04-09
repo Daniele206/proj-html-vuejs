@@ -1,5 +1,11 @@
 <script>
+  import SushiCard from './SushiCard.vue';
+
   export default {
+    components:{
+      SushiCard
+    },
+
     props:{
       preText1:String,
       text1: String,
@@ -29,8 +35,8 @@
         </div>
       </div>
     </div>
-    <div>
-
+    <div class="sushi-pt">
+      <SushiCard />
     </div>
   </div>
 </template>
@@ -40,6 +46,10 @@
   @use '../../assets/scss/variables' as *;
   .w-signature{
     width: 35%;
+  }
+
+  .sushi-pt{
+    padding-top: 170px;
   }
 
   .un-exp{
@@ -57,7 +67,7 @@
           font-size: 1.2rem;
           letter-spacing: 0.01rem;
           line-height: 2rem;
-          color: $my-darck-gray;
+          color: $my-dark-gray;
         }
       }
     }

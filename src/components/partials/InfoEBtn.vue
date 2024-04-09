@@ -61,7 +61,6 @@
   }
 
   .my-btn{
-    margin-bottom: 12.5rem;
     font-family: "Kanit", sans-serif;
     font-size: .9rem;
     font-weight: 600;

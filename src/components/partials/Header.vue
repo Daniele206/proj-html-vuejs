@@ -57,7 +57,7 @@
     content: 'New';
     margin-left: 10px;
     padding: 3px 6px;
-    border: 1px solid $my-darck-gray;
+    border: 1px solid $my-dark-gray;
     border-radius: 2px;
   }
 
@@ -80,7 +80,7 @@
         width: 65px;
         aspect-ratio: 1;
         border-radius: 8px;
-        color: $my-darck-gray;
+        color: $my-dark-gray;
         box-shadow: 0 0 4px $my-black;
         .box-content{
           height: 60%;
