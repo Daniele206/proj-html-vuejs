@@ -67,6 +67,7 @@
     height: 180px;
     width: 100%;
     position: fixed;
+    z-index: 999;
     display: flex;
     justify-content: center;
     background: linear-gradient(rgb(0, 0, 0) -25%, rgba(0, 0, 0, 0));
