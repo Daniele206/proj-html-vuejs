@@ -33,7 +33,11 @@ const dataBase= {
     },
   },
   mainTheBTab: {
-
+    title: 'FINE DINING EXPERIENCE',
+    mainSpot: 'THE BEST TABLE IN TOWN',
+    fsMainSpot: '4.2',
+    text: 'Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla.',
+    textBtn: 'EXPLORE THE MENU',
   },
   mainAbUs:{
 

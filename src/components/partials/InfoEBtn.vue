@@ -13,9 +13,9 @@
 
 
 <template>
-  <div class="d-flex">
+  <div class="d-flex w-total">
     <div class="befor-jum-info"></div>
-    <div class="w-25">
+    <div>
       <h3 class="pb-4 title text-uppercase">{{ title }}</h3>
       <h2 class="main-spot text-uppercase pb-4 pt-2" :style="`
     font-size: ${fsMs}rem;`">{{ mainSpot }}</h2>
@@ -31,9 +31,13 @@
 <style lang="scss" scoped>
   @use '../../assets/scss/variables' as *;
 
+  .w-total{
+    width: 520px;
+  }
+
   .befor-jum-info{
     border: 0.5px solid $my-light-gray;
-    width: 50px;
+    width: 140px;
     height: 0;
     margin-top: 0.8rem;
     margin-right: 55px;
