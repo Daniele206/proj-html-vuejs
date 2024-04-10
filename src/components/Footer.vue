@@ -16,8 +16,8 @@
     <div class="info-footer d-flex justify-content-end align-items-center  text-center flex-column">
       <img class="pb-5" src="/public/logo-restaurant.png" alt="">
       {{ dataBase.footer.text }}
-      <div class="pt-5">
-        <i class="fa-brands fa-facebook-f my_social d-center"></i>
+      <div class="pt-5 d-flex">
+        <i v-for="i in dataBase.footer.social" :class="i" class="mx-2 my_social d-center"></i>
       </div>
     </div>
     <div class="copy d-center">
@@ -41,7 +41,7 @@
 
   footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: $my-white;
+    color: $my-light-gray;
     background-image: url(/public/footer2x.jpg);
     width: 100%;
     aspect-ratio: 20/8;
@@ -52,7 +52,6 @@
       height: 90%;
       font-size: 1.3rem;
       width: 33%;
-      color: $my-light-gray;
     }
     .copy{
       width: 100%;

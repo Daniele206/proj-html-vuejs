@@ -63,7 +63,14 @@ const dataBase= {
   },
   footer: {
     text: 'Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Quam eu proin sit massa condimentum.',
-    copy: 'Copyright 2012 - 2019 Avada | All Rights Reserved | Powered by WordPress | ThemeFusion'
+    copy: 'Copyright 2012 - 2019 Avada | All Rights Reserved | Powered by WordPress | ThemeFusion',
+    social: {
+      faceboock: 'fa-brands fa-facebook-f',
+      twitter: 'fa-brands fa-twitter',
+      youtube: 'fa-brands fa-youtube',
+      instagram: 'fa-brands fa-instagram',
+      linkedin: 'fa-brands fa-linkedin-in',
+    }
   }
 }
 
