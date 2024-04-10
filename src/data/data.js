@@ -44,7 +44,23 @@ const dataBase= {
 
   },
   mainNewProm: {
-
+    card: [
+      {
+        img: 'blog92x.jpg',
+        cardTitle: 'THE BEST COFFEE IN TOWN',
+        text: 'By admin | January 7th, 2020 | Categories: News'
+      },
+      {
+        img: 'blog72x.jpg',
+        cardTitle: 'DISCOVER OUR NEW MENU',
+        text: 'By admin | January 7th, 2020 | Categories: News'
+      },
+      {
+        img: 'blog82x.jpg',
+        cardTitle: 'WE NOW ACCEPT SQUARE!',
+        text: 'By admin | January 7th, 2020 | Categories: News'
+      },
+    ]
   },
   mainTakeOut: {
     title: 'ENJOY YOUR MEAL AT HOME',

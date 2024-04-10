@@ -3,6 +3,7 @@
   import UnExp from './partials/UnExp.vue';
   import MultiTab from './partials/MultiTab.vue';
   import MidSlider from './partials/MidSlider.vue';
+  import NewProm from './partials/NewProm.vue';
   import Menues from './partials/Menues.vue';
   import BigSlider from './partials/BigSlider.vue';
 
@@ -13,6 +14,7 @@
       MidSlider,
       Menues,
       BigSlider,
+      NewProm,
     },
 
     data(){
@@ -42,6 +44,7 @@
       :img="dataBase.mainTheBTab.img"
     />
     <MidSlider />
+    <NewProm />
     <MultiTab 
       :title="dataBase.mainTakeOut.title"
       :mainSpot="dataBase.mainTakeOut.mainSpot"
