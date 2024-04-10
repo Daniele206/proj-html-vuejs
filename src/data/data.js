@@ -41,7 +41,35 @@ const dataBase= {
     img: 'slider32x.jpg',
   },
   mainAbUs:{
-
+    longCard:{
+      img: false,
+      title: 'MEGGY STEWART',
+      mainSpot: 'NEW YORK TIMES',
+      text1: 'Non arcu mauris tortor ultrices mollis tellus euismod fermentum. Habitant amet tincidunt id sapien accumsan sed at.',
+      text2: 'Mmalesuada ullamcorper amet. Pretium pretium dignissim nisi.',
+      textBtn: 'READ FULL ARTICLE',
+      width: '50%',
+    },
+    shortCard:[
+      {
+        img: 'info52x.jpg',
+        title: 'MARY MAXEY',
+        mainSpot: 'THE GUARDIAN',
+        text1: 'Non arcu mauris tortor ultrices mollis tellus euismod fermentum. Habitant amet tincidunt id sapien accumsan sed.',
+        text2: false,
+        textBtn: 'READ FULL ARTICLE',
+        width: '96%',
+      },
+      {
+        img: 'info12x.jpg',
+        title: 'PATRICK MONROE',
+        mainSpot: 'GLOBE AND MAIL',
+        text1: 'Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.',
+        text2: false,
+        textBtn: 'READ FULL ARTICLE',
+        width: '96%',
+      },
+    ]
   },
   mainNewProm: {
     card: [

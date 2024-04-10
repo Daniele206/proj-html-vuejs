@@ -26,11 +26,11 @@
         </div>
       </div>
       <div class="box-flag-container d-flex flex-column">
-        <div v-for="i in 2" class="box-flag mt-2">
+        <div v-for="i in 2" class="cursor_pointer box-flag mt-2">
           <div v-if="i === 1" class="box-content"><i class="fa-solid fa-paper-plane my-blue"></i></div>
           <div v-else-if="i === 2" class="box-content box-content-price fs-3 fw-bold my_text_green">
-          <div class="fs-5 mb-1 pb-2">$</div>
-          <div>39</div>
+            <div class="fs-5 mb-1 pb-2">$</div>
+            <div>39</div>
           </div>
           <div v-if="i === 1" class="box-text text-center">Demos</div>
           <div v-else-if="i === 2" class="box-text text-center">On Sale</div>
@@ -43,6 +43,9 @@
 
 <style lang="scss" scoped>
   @use '../../assets/scss/variables' as *;
+  .cursor_pointer{
+    cursor: pointer;
+  }
 
   .my_px{
     padding: 0 21.5px;

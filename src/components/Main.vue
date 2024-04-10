@@ -2,6 +2,7 @@
   import { dataBase } from '../data/data';
   import UnExp from './partials/UnExp.vue';
   import MultiTab from './partials/MultiTab.vue';
+  import AboutUs from './partials/AboutUs.vue';
   import MidSlider from './partials/MidSlider.vue';
   import NewProm from './partials/NewProm.vue';
   import Menues from './partials/Menues.vue';
@@ -11,6 +12,7 @@
     components:{
       UnExp,
       MultiTab,
+      AboutUs,
       MidSlider,
       Menues,
       BigSlider,
@@ -43,6 +45,7 @@
       :textBtn="dataBase.mainTheBTab.textBtn"
       :img="dataBase.mainTheBTab.img"
     />
+    <AboutUs />
     <MidSlider />
     <NewProm />
     <MultiTab 
