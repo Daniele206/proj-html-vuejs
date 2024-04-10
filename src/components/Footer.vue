@@ -17,7 +17,7 @@
       <img class="pb-5" src="/public/logo-restaurant.png" alt="">
       {{ dataBase.footer.text }}
       <div class="pt-5 d-flex">
-        <i v-for="i in dataBase.footer.social" :class="i" class="mx-2 my_social d-center"></i>
+        <a v-for="i in dataBase.footer.social" class="mx-2 my_social d-center" href="#"><i :class="i"></i></a>
       </div>
     </div>
     <div class="copy d-center">
@@ -29,6 +29,10 @@
 
 <style lang="scss" scoped>
   @use '../assets/scss/variables' as *;
+
+  a{
+    text-decoration: none;
+  }
 
   .my_social{
     background: $my-white;
