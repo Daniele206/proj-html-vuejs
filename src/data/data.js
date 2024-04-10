@@ -55,9 +55,86 @@ const dataBase= {
     textBtn: 'VIEW TAKEOUT MENU',
     img: 'slider72x-scaled.jpg',
   },
-  mainMenu: {
-
-  },
+  mainMenues: [
+    {
+      menuImg: false,
+      title: 'HORS D\'OEUVRES',
+      products: [
+        {
+          name: 'AHI SALMON NIGIRI',
+          description: 'Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit lacinia.',
+          price: '$48',
+        },
+        {
+          name: 'UMI MASU SALAD',
+          description: 'Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.',
+          price: '$21',
+        },
+        {
+          name: 'TEMAKI WITH CRAB',
+          description: 'Ac vel, risus ornare senectus placerat duis amet dictumst tellus.',
+          price: '$32',
+        },
+        {
+          name: 'CALIFORNIA ROLLS',
+          description: 'Ac vel, risus ornare senectus placerat duis amet dictumst tellus.',
+          price: '$22',
+        },
+      ]
+    },
+    {
+      menuImg: 'misc22x.jpg',
+      title: 'Main Course',
+      products: [
+        {
+          name: 'BRAISED ABALONE',
+          description: 'Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.',
+          price: '$52',
+        },
+        {
+          name: 'TWICE COOKED PORK',
+          description: 'Ac vel, risus ornare senectus placerat duis amet dictumst tellus.',
+          price: '$21',
+        },
+        {
+          name: 'KUNG PAO CHICKEN',
+          description: 'Quis duis sit dictum aliquam a velit enim. Tellus in sit augue aliquam.',
+          price: '$32',
+        },
+        {
+          name: 'CHAR SIU & SUSHIS',
+          description: 'Feugiat rhoncus ipsum tristique purus diam, et dolor molestie.',
+          price: '$48',
+        },
+      ]
+    },
+    {
+      menuImg: false,
+      title: 'Dessert',
+      products: [
+        {
+          name: 'CHOCOLATE BALL CAKE',
+          description: 'In pellentesque in felis massa vehicula. In sed euismod ut.',
+          price: '$13',
+        },
+        {
+          name: 'LIME PIE WITH CRUST',
+          description: 'Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.',
+          price: '$14',
+        },
+        {
+          name: 'RASBERRY PEAR CAKE',
+          description: 'Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit.',
+          price: '$18',
+        },
+        {
+          name: 'CAFÉ AU LAIT',
+          description: 'Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit.',
+          price: '$6',
+        },
+      ]
+    },
+  ],
   mainBigSlider: {
     mainSpot: 'braised abalone',
     text: 'Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.',

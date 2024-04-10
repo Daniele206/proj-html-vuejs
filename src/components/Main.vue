@@ -1,8 +1,9 @@
 <script>
   import { dataBase } from '../data/data';
-  import MultiTab from './partials/MultiTab.vue';
   import UnExp from './partials/UnExp.vue';
+  import MultiTab from './partials/MultiTab.vue';
   import MidSlider from './partials/MidSlider.vue';
+  import Menues from './partials/Menues.vue';
   import BigSlider from './partials/BigSlider.vue';
 
   export default {
@@ -10,6 +11,7 @@
       UnExp,
       MultiTab,
       MidSlider,
+      Menues,
       BigSlider,
     },
 
@@ -49,6 +51,7 @@
       :icoBtn="dataBase.mainTakeOut.icoBtn"
       :img="dataBase.mainTakeOut.img"
     />
+    <Menues />
     <BigSlider />
   </main>
 </template>

@@ -112,6 +112,9 @@
           a{
             color: $my-light-gray;
             text-decoration: none;
+            &:hover{
+              color: $my-white;
+            }
           }
         }
       }
