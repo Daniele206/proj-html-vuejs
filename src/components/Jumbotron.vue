@@ -40,7 +40,7 @@
   @use '../assets/scss/variables' as *;
 
   #jumbotron{
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
     background-image: url(/public/slider52x.jpg);
     background-size: contain;
     background-repeat: no-repeat;

@@ -3,12 +3,14 @@
   import MultiTab from './partials/MultiTab.vue';
   import UnExp from './partials/UnExp.vue';
   import MidSlider from './partials/MidSlider.vue';
+  import BigSlider from './partials/BigSlider.vue';
 
   export default {
     components:{
       UnExp,
       MultiTab,
       MidSlider,
+      BigSlider,
     },
 
     data(){
@@ -47,6 +49,7 @@
       :icoBtn="dataBase.mainTakeOut.icoBtn"
       :img="dataBase.mainTakeOut.img"
     />
+    <BigSlider />
   </main>
 </template>
 

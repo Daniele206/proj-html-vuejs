@@ -14,14 +14,14 @@
         </div>
         <div class="rigth-col col col-7 justify-content-end">
           <ul class="d-flex list-unstyled fw-bold">
-            <li class="px-3"><a href="#">Home</a></li>
-            <li class="px-3"><a href="#">Culinary History</a></li>
-            <li class="px-3"><a href="#">Our Team</a></li>
-            <li class="px-3"><a href="#">Our Menu</a></li>
-            <li class="px-3"><a href="#" class="new-flag">Takeout</a></li>
-            <li class="px-3"><a href="#">Bulletin</a></li>
-            <li class="px-3"><a href="#">Reservations</a></li>
-            <li class="px-3"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li class="my_px"><a href="#">Home</a></li>
+            <li class="my_px"><a href="#">Culinary History</a></li>
+            <li class="my_px"><a href="#">Our Team</a></li>
+            <li class="my_px"><a href="#">Our Menu</a></li>
+            <li class="my_px"><a href="#" class="new-flag">Takeout</a></li>
+            <li class="my_px"><a href="#">Bulletin</a></li>
+            <li class="my_px"><a href="#">Reservations</a></li>
+            <li class="my_px"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
           </ul>
         </div>
       </div>
@@ -43,6 +43,10 @@
 
 <style lang="scss" scoped>
   @use '../../assets/scss/variables' as *;
+
+  .my_px{
+    padding: 0 21.5px;
+  }
 
   .my_text_green{
     color: #63BA79;

@@ -59,7 +59,10 @@ const dataBase= {
 
   },
   mainBigSlider: {
-
+    mainSpot: 'braised abalone',
+    text: 'Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.',
+    textBtn: 'view in the menu',
+    price: '$52',
   },
   footer: {
     text: 'Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Quam eu proin sit massa condimentum.',
